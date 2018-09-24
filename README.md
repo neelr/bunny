@@ -1,7 +1,7 @@
 <div align="center">
-<img src="/main.svg">
-Art for <a href="https://gitlab.com/tim241/bunny">bunny</a>, a package
-management wrapper
+branding for <i><a href="https://gitlab.com/bunny-team/bunny">bunny<a></i>, 
+a meta package manager.
 </div>
 
-(I know it looks awful right now tim aaaaaaaaaaaaaaaah)
+* [The logo](img/main.svg)
+* [The (potential) website](https://0xfi.github.io/bunny)
