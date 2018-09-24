@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style>
+		body {
+			background-color: #111111;
+			color: #ffffff;		
+		}
+		.code {
+			font-family: monospace;
+			color: #cccccc;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		a:link {
+			color: #ffffff;
+		}
+		a:visited {
+			color: #ffffff;
+		}
+	</style>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+</head>
+<body>
+	<div align="center">
+		<br><a href="https://gitlab.com/bunny-team/bunny"><img
+		src="img/favicon.png" width="100" height="100"/></a><br>
+		<h1>bunny</h1>
+		<p>A simple shell script wrapper around multiple package
+		managers</p>
+		<p><a href="#about">About</a> | <a
+		href="#supported-package-managers">Supported
+		Mangers</a> | <a href="#start">Quick Start</a> | <a
+		href="#contributing">Contributing</a></p>
+	</div>
+	<h1 id="about">About</h1>
+	<p>Bunny is a cross-OS, user friendly package manager for UNIX</p>
+	<ul>
+		<li>Switch to another package manager has never been so
+		easy!</li>
+		<li>Bunny has cute alternatives to commands</li>
+		<li>Bunny is free as in free software</li>
+		<li>Only need to learn a few basic commands to use bunny
+		anywhere</li>
+	</ul>
+	<h1 id="supported-package-managers">Supported Managers</h1>
+	<ul>
+		<li>Arch Linux (pacman)</li>
+		<li>AUR (Arch Linux) Helpers</li>
+		<ul>
+			<li>trizen</li>
+			<li>yay</li>
+			<li>aurman</li>
+		</ul>
+		<li>Debian/*buntu (apt-get)</li>
+		<li>OpenBSD (pkg)</li>
+		<li>Gentoo (emerge)</li>
+		<li>Void Linux (xbps)</li>
+		<li>NixOS - nix supported on any system</i>
+		<li>GuixSD - guix supported on any system</li>
+	</ul>
+	<h1 id="start">Quick Start</h1>
+	Currently bunny can only be installed manually via git.
+	<div class="code">
+	$ git clone https://gitlab.com/bunny-team/bunny
+	</div>
+	Once the repository has been cloned, you need to use GNU make<br>
+	(almost definetly already installed on your system) to install<br>
+	bunny to your system (globally).
+	<div class="code">
+	$ cd bunny<br>
+	# make install
+	</div>
+	And you're done installing!<br><br>
+	To get started, run
+	<div class="code">
+	bunny help
+	</div>
+	to get a list of commands.
+	<h1 id="contributing">Contributing</h1>
+	</body>
+</html>
