@@ -4,4 +4,4 @@ a meta package manager.
 </div>
 
 * [The logo](img/main.svg)
-* [The (potential) website](https://0xfi.github.io/bunny)
+* [The (potential) website](https://0xfi.github.io/bunny/)
