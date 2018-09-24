@@ -1,4 +1,5 @@
 <div align="center">
+<img src="img/main.svg"/><br>
 branding for <i><a href="https://gitlab.com/bunny-team/bunny">bunny<a></i>, 
 a meta package manager.
 </div>
