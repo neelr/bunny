@@ -2,87 +2,134 @@
 
 <html>
 <head>
-	<style>
-		body {
-			background-color: #222224;
-			color: #ffffff;
-			margin-left: 150px;
-			margin-right: 150px;
-		}
-		.code {
-			font-family: monospace;
-			color: #cccccc;
-			margin-top: 20px;
-			margin-bottom: 20px;
-			margin-left: 20px;
-			margin-right: 20px;
-		}
-		a:link {
-			color: #ffffff;
-		}
-		a:visited {
-			color: #ffffff;
-		}
-	</style>
 	<link rel="shortcut icon" href="img/favicon.png"/>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bunny</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-	<div align="center">
-		<br><a href="https://gitlab.com/bunny-team/bunny"><img
-		src="img/favicon.png" width="100" height="100"/></a><br>
-		<h1>bunny</h1>
-		<p>A simple shell script wrapper around multiple package
-		managers</p>
-		<p><a href="#about">About</a> | <a
-		href="#supported-package-managers">Supported
-		Mangers</a> | <a href="#start">Quick Start</a> | <a
-		href="#contributing">Contributing</a></p>
+	<nav class="navbar is-dark is-bold" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="navbar-item">
+				<img src="img/favicon.png" height="28">
+			</a>
+
+			<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			</a>
+		</div>
+
+		<div class="navbar-menu">
+			<div class="navbar-start">
+				<a href="#about" class="navbar-item">
+					About
+				</a>
+				<a href="#supp" class="navbar-item">
+					Supported Managers
+				</a>
+				<a href="#quick" class="navbar-item">
+					Quick Start
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="hero is-dark is-bold">
+		<div class="hero-body">
+			<div class="container">
+				<a href="https://gitlab.com/bunny-team/bunny">
+					<img src="img/favicon.png" width="100" height="100"/>
+				</a>
+				<br>
+				<h1 class="title">bunny</h1>
+				<p class="subtitle">A simple shell script wrapper around multiple package managers</p>
+			</div>
+		</div>
 	</div>
-	<h1 id="about">About</h1>
-	<p>Bunny is a cross-OS, user friendly package manager for UNIX</p>
-	<ul>
-		<li>Switch to another package manager has never been so
-		easy!</li>
-		<li>Bunny has cute alternatives to commands</li>
-		<li>Bunny is free as in free software</li>
-		<li>Only need to learn a few basic commands to use bunny
-		anywhere</li>
-	</ul>
-	<h1 id="supported-package-managers">Supported Managers</h1>
-	<ul>
-		<li>Arch Linux (pacman)</li>
-		<li>AUR (Arch Linux) Helpers</li>
-		<ul>
-			<li>trizen</li>
-			<li>yay</li>
-			<li>aurman</li>
-		</ul>
-		<li>Debian/*buntu (apt-get)</li>
-		<li>OpenBSD (pkg)</li>
-		<li>Gentoo (emerge)</li>
-		<li>Void Linux (xbps)</li>
-		<li>NixOS - nix supported on any system</i>
-		<li>GuixSD - guix supported on any system</li>
-	</ul>
-	<h1 id="start">Quick Start</h1>
-	Currently bunny can only be installed manually via git.
-	<div class="code">
-	$ git clone https://gitlab.com/bunny-team/bunny
+	<div id="about" class="section">
+		<div class="columns">
+			<div class="column">
+				<div class="box">
+					<h1 class="title">About</h1>
+					<p>Bunny is a cross-OS, user friendly package manager for UNIX</p>
+					<div class="list">
+						<a class="list-item">Switch to another package manager has never been so
+						easy!</a>
+						<a class="list-item">Bunny has cute alternatives to commands</a>
+						<a class="list-item">Bunny is free as in free software</a>
+						<a class="list-item">Only need to learn a few basic commands to use bunny
+						anywhere</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	Once the repository has been cloned, you need to use GNU make<br>
-	(almost definetly already installed on your system) to install<br>
-	bunny to your system (globally).
-	<div class="code">
-	$ cd bunny<br>
-	# make install
+
+	<div id="supp" class="section">
+		<div class="columns">
+			<div class="column">
+				<div class="box">
+					<h1 class="title">Supported Managers</h1>
+					<div class="list">
+						<a class="list-item">Arch Linux (pacman)</a>
+						<a class="list-item">AUR (Arch Linux) Helpers</a>
+						<a class="list-item">trizen</a>
+						<a class="list-item">yay</a>
+						<a class="list-item">aurman</a>
+						<a class="list-item">Debian/*buntu (apt-get)</a>
+						<a class="list-item">OpenBSD (pkg)</a>
+						<a class="list-item">Gentoo (emerge)</a>
+						<a class="list-item">Void Linux (xbps)</a>
+						<a class="list-item">NixOS - nix supported on any system</a>
+						<a class="list-item">GuixSD - guix supported on any system</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	And you're done installing!<br><br>
-	To get started, run
-	<div class="code">
-	$ bunny help
+
+
+	<div id="quick" class="section">
+		<div class="columns">
+			<div class="column">
+				<div class="box">
+					<h1 class="title">Quick Start</h1>
+					<p>Currently bunny can only be installed manually via git.</p>
+					<code>
+					$ git clone https://gitlab.com/bunny-team/bunny
+					</code>
+					<br>
+					<br>
+					<p>
+					Once the repository has been cloned, you need to use GNU make<br>
+					(almost definetly already installed on your system) to install<br>
+					bunny to your system (globally).</p>
+					<code>
+					$ cd bunny
+					</code>
+					<code>
+					# make install
+					</code>
+					<br>
+					<br>
+					<p>And you're done installing!</p>
+					<p>To get started, run</p>
+					<code>
+					$ bunny help
+					</code>
+					<p>to get a list of commands.</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	to get a list of commands.
-	<h1 id="contributing">Contributing</h1>
-	TODO
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>Website Designed and Created by <a href="https://github.com/Hacker719">Hacker719</a>.</p>
+		</div>
+	</footer>
 	</body>
 </html>
